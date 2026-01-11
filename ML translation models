@@ -1,0 +1,141 @@
+✅ Models Used in Machine Translation (Language Translation)
+1) Rule-Based Machine Translation (RBMT)
+✅ What it does:
+
+Uses grammar rules + dictionary written by humans.
+
+✅ Example:
+
+English → Hindi
+“I eat apples” → “मैं सेब खाता हूँ”
+
+✅ Used when:
+
+strict grammar-based translation needed
+
+older systems
+
+2) Statistical Machine Translation (SMT)
+✅ What it does:
+
+Learns translation using probability/statistics from large bilingual datasets.
+
+✅ Example:
+
+It calculates probabilities like:
+
+P(“सेब”) = “apple”
+
+P(sentence translation) based on training data
+
+✅ Types:
+
+Phrase-based SMT (most common)
+
+3) Example-Based Machine Translation (EBMT)
+✅ What it does:
+
+Uses previous translation examples and matches similar patterns.
+
+✅ Example:
+
+If dataset has:
+“I am a student” → “मैं एक छात्र हूँ”
+Then for:
+“I am a teacher” it predicts: “मैं एक शिक्षक हूँ”
+
+4) Neural Machine Translation (NMT)
+✅ What it does:
+
+Uses Deep Learning Neural Networks to translate end-to-end.
+
+Instead of translating word by word, it translates whole sentence meaning.
+
+✅ Example:
+
+English → French
+“How are you?” → “Comment ça va ?”
+
+✅ NMT gives more natural translations.
+
+✅ Deep Learning Models in NMT (Most Important)
+5) RNN-based Seq2Seq Model (Encoder–Decoder)
+✅ What it does:
+
+Encoder reads source sentence
+
+Decoder generates translated sentence
+
+✅ Example:
+
+Input: “I love India”
+Output: “मुझे भारत पसंद है”
+
+📌 Problem: slow + difficulty with long sentences.
+
+6) Seq2Seq with Attention
+✅ What it improves:
+
+Attention helps model focus on important words while translating.
+
+✅ Example:
+
+“The boy who is wearing a red shirt is running”
+Attention helps model connect:
+
+“boy” ↔ “लड़का”
+
+“red shirt” ↔ “लाल शर्ट”
+
+✅ Much better accuracy than plain Seq2Seq.
+
+7) Transformer Model (Most Used Today ✅)
+✅ What it does:
+
+Uses Self-Attention and parallel processing, no RNN needed.
+
+✅ Why best:
+
+fast training
+
+handles long sentences well
+
+state-of-the-art MT results
+
+✅ Example:
+
+English → Spanish
+“I will go to the market tomorrow.”
+→ “Iré al mercado mañana.”
+
+✅ Pretrained Translation Models (Real Life)
+
+These are used in actual systems:
+
+8) Google Neural Machine Translation (GNMT)
+
+Google Translate uses neural-based systems (Transformer/NMT based).
+
+9) mBART
+
+A multilingual translation model trained for many languages.
+
+Example: English ↔ Hindi, English ↔ French, etc.
+
+10) MarianMT
+
+Open-source NMT models for translation (popular in research).
+
+11) T5 / mT5
+
+Text-to-text transformer models. Translation can be done like:
+“translate English to Hindi: I love you”
+→ “मैं तुमसे प्यार करता हूँ”
+
+12) GPT-based Translation Models
+
+Large Language Models (LLMs) can translate too.
+
+Example:
+Translate: “Cybersecurity is important.”
+→ “साइबर सुरक्षा महत्वपूर्ण है।”
